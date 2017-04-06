@@ -1,5 +1,5 @@
 # DE-kupl
-Exhaustive capture of biological variation in RNA-seq data through k-mer decomposition.
+Exhaustive capture of biological variation in RNA-seq data through k-mer decomposition (http://biorxiv.org/content/early/2017/03/31/122937).
 
 DE-kupl computational protocol with the aim to capture all k-mer variation in an input set of RNA-seq libraries. This protocol is composed of four main components :
 
