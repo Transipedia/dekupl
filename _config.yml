@@ -3,7 +3,7 @@ title: "DEkupl: Exhaustive capture of biological variation in RNA-seq data throu
 email: "crac-bugs@lists.gforge.inria.fr"
 description: "DE-kupl analyzes k-mer contents and detects k-mers with differential abundance directly from the sequencing files, prior to assembly or mapping. This enables to retrieve the virtually complete set of unannotated variation lying in an RNA-seq dataset. This variation is subsequently assigned to biological events such as differential lincRNAs, antisense RNAs, splice and polyadenylation variants, introns, expressed repeats, chimeric/circular RNA, exogeneous RNA or SNV-harbouring RNA."
 baseurl: ""
-url: "https://transipedia.github.io/dekupl-website/"
+url: "https://transipedia.github.io/dekupl/"
 #download_link: "https://gforge.inria.fr/frs/?group_id=5452"
 github_link: "https://github.com/Transipedia/dekupl"
 logo: "/images/logo.png"
