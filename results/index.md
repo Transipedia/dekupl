@@ -71,3 +71,4 @@ Filename | Description
 [DiffContigsInfos.tsv.gz]({{ "/results/GTEx-vs-HPA/DiffContigsInfos.tsv.gz" | prepend: site.baseurl}}) | Result of DEkupl run on GTEx data: contig table
 [diff_contigs.bed.gz]({{ "/results/GTEx-vs-HPA/diff_contigs.bed.gz" | prepend: site.baseurl}}) | Result of DEkupl run on GTEx data: contig bed file (Human HG38 coordinates)
 [gtex.fa]({{ "/results/GTEx-vs-HPA/gtex.fa" | prepend: site.baseurl}}) | Fasta file with selection of representative k-mers for best contigs (higher abs(fold change)) in each category : {::nomarkdown}<ul><li>polyA (100)</li><li>splice (100)</li><li>lincRNA (100)</li><li>intron_DU (100)</li><li>repeat (100)</li><li>unmapped (50)</li></ul>{:/} For each k-mer, the fasta comment line contains: `[event class] [contig #] [mean count Colon] [mean cout Skin] [up or down in Skin]`
+{: .table }
