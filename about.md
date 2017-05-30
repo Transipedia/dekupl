@@ -29,4 +29,4 @@ Therfore, you need to download and execute both sub-projects.
 
 First, Jellyfish is applied to count k-mers in all libraries. K-mers counts are then joined into a count matrix and filtered for low-recurrence and matching to the reference transcriptome. Normalization factors are computed from raw K-mer counts and the DE procedure is applied. Finally overlapping DE k-mers are merged into contigs and annotated based on their alignment to reference and overlap with annotations. In parallel, FASTQs are processed with Kallisto to estimate gene-level counts and differentially expressed genes are derived using DESeq2. The list of DE genes is used for contig annotation only.
 
-![Dekupl pipeline]({{ "/images/dekupl-pipeline.png" | prepend: site.baseurl }})
+![Dekupl pipeline]({{ "/images/dekupl-pipeline.png" | prepend: site.baseurl}}){: .img-fluid }
