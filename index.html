@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>What's new?</h1>
+
+  <!-- Posts -->
+  {% for post in paginator.posts %}
+    <h3>{{ post.title }}</h3>
+    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <hr>
+    <p>{{ post.content }}</p>
+    <br />
+  {% endfor %}
+
+  <!-- Pagination links -->
+  {% if paginator.total_pages > 1 %}
+  <nav>
+    <ul class="pagination">
+      {% if paginator.previous_page %}
+      <li>
+      {% else %}
+      <li class="disabled">
+      {% endif %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span></a>
+      </li>
+
+      {% for page in (1..paginator.total_pages) %}
+
+        {% if page == paginator.page %}
+        <li class="active">
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}<span class="sr-only">(current)</span></a>
+        </li>
+        {% elsif page == 1 %}
+        <li>
+          <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//','/' }}">{{ page }}<span class="sr-only">(current)</span></a>
+          </li>
+        {% else %}
+        <li>
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}<span class="sr-only">(current)</span></a>
+        </li>
+        {% endif %}
+
+      {% endfor %}
+
+      {% if paginator.next_page %}
+      <li>
+      {% else %}
+      <li class="disabled">
+      {% endif %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+    </ul>
+  </nav>
+  {% endif %}
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
