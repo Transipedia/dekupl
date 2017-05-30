@@ -60,3 +60,14 @@ Filename | Description
 Splicing Regulatory Network and Combinatorial Regulation by Key
 Factors during the Epithelial-to-Mesenchymal Transition. Mol Cell Biol
 [36:1704-19](https://www.ncbi.nlm.nih.gov/pubmed/27044866).
+
+### GTEx / HPA Cross validation data
+
+#### Output files
+
+Filename | Description
+---------|------------
+[libraries.txt]({{ "/results/GTEx-vs-HPA/libraries.txt" | prepend: site.baseurl}}) | Description of GTEx and HPA libraries used.
+[DiffContigsInfos.tsv.gz]({{ "/results/GTEx-vs-HPA/DiffContigsInfos.tsv.gz" | prepend: site.baseurl}}) | Result of DEkupl run on GTEx data: contig table
+[diff_contigs.bed.gz]({{ "/results/GTEx-vs-HPA/diff_contigs.bed.gz" | prepend: site.baseurl}}) | Result of DEkupl run on GTEx data: contig bed file (Human HG38 coordinates)
+[gtex.fa]({{ "/results/GTEx-vs-HPA/gtex.fa" | prepend: site.baseurl}}) | Fasta file with selection of representative k-mers for best contigs (higher abs(fold change)) in each category : {::nomarkdown}<ul><li>polyA (100)</li><li>splice (100)</li><li>lincRNA (100)</li><li>intron_DU (100)</li><li>repeat (100)</li><li>unmapped (50)</li></ul>{:/} For each k-mer, the fasta comment line contains: `[event class] [contig #] [mean count Colon] [mean cout Skin] [up or down in Skin]`
