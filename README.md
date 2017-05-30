@@ -1,7 +1,7 @@
 # DE-kupl
 Exhaustive capture of biological variation in RNA-seq data through k-mer decomposition (http://biorxiv.org/content/early/2017/03/31/122937).
 
-DE-kupl computational protocol with the aim to capture all k-mer variation in an input set of RNA-seq libraries. This protocol is composed of four main components :
+DE-kupl is a computational protocol that aims to capture all k-mer variation in an input set of RNA-seq libraries. This protocol is composed of four main components :
 
 - **Indexing**: index and count all k-mers (k=31) in the input libraries
 - **Filtering**: delete k-mers representing potential sequencing errors or perfectly matching known transcripts
@@ -10,7 +10,7 @@ DE-kupl computational protocol with the aim to capture all k-mer variation in an
 
 ## Installation and usage
 
-DE-kupl project is splited into two sub-project: 
+The DE-kupl project is composed of two sub-project: 
 
 - [DE-kupl run](https://github.com/Transipedia/dekupl-run) which handle the DE-kupl procude from raw FASTQ to the assembly of differentially expressed k-mers. 
 - [DE-kupl annotation](https://github.com/Transipedia/dekupl-annotation) which annotate DE contigs produced bu DE-kupl run.
