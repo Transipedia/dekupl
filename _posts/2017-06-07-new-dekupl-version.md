@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New release of DE-kupl: 1.0
+title: 'New release of DE-kupl: 1.0'
 ---
 
 The [new version](https://github.com/Transipedia/dekupl-run/releases/tag/1.0) of DE-kupl now includes
