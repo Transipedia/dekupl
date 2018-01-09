@@ -15,6 +15,9 @@ The DE-kupl project is composed of two sub-project:
 - [DE-kupl run](https://github.com/Transipedia/dekupl-run) which handle the DE-kupl procude from raw FASTQ to the assembly of differentially expressed k-mers. 
 - [DE-kupl annotation](https://github.com/Transipedia/dekupl-annotation) which annotate DE contigs produced bu DE-kupl run.
 
-Therfore, you need to download and execute both sub-projects.
+Therefore, you need to download and execute both sub-projects.
+
+Alternatively, retrieve a Docker implementation of DE-kupl (not the annotation part for now) at:
+https://hub.docker.com/r/ebio/dekupl/
 
 **WARNINGS**: Currently DE-kupl, is set up for Human genome only. Manual modification of the sources is needed to handle other species.
