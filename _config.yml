@@ -5,7 +5,7 @@ description: "DE-kupl analyzes k-mer contents and detects k-mers with differenti
 baseurl: ""
 url: "https://transipedia.github.io/dekupl/"
 #download_link: "https://gforge.inria.fr/frs/?group_id=5452"
-github_link: "https://github.com/Transipedia/dekupl"
+github_link: "https://transipedia.github.io/dekupl/"
 logo: "/images/logo.png"
 favicon: "/images/favicon.png"
 
