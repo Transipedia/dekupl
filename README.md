@@ -8,13 +8,20 @@ DE-kupl is a computational protocol that aims to capture all k-mer variation in 
 - **Differential Expression (DE)**: select k-mers with significantly different abundance across conditions
 - **Assembly and annotation**: build contigs of assembled k-mers and annotate contigs based on sequence alignment.
 
-## Installation and usage
+## DE-kupl workflow
 
-The DE-kupl project is composed of two sub-project: 
+![Dekupl workflow](images/dekupl-workflow.png)
+
+The DE-kupl project is composed of three sub-modules: 
 
 - [DE-kupl run](https://github.com/Transipedia/dekupl-run) which handle the DE-kupl procude from raw FASTQ to the assembly of differentially expressed k-mers. 
 - [DE-kupl annotation](https://github.com/Transipedia/dekupl-annotation) which annotate DE contigs produced bu DE-kupl run.
+- [DE-kupl viewer](https://github.com/Transipedia/dekupl-annotation) Interactively visualize annotated dekupl contigs in a Shiny interface.
 
-Therfore, you need to download and execute both sub-projects.
+We recommand to use [conda](https://conda.io/miniconda.html) to install all three submodules using a single command-line :
 
-**WARNINGS**: Currently DE-kupl, is set up for Human genome only. Manual modification of the sources is needed to handle other species.
+```
+conda install -n dekupl -y -m --override-channels -c transipedia -c bioconda -c conda-forge -c https://repo.anaconda.com/pkgs/main -c https://repo.anaconda.com/pkgs/free -c https://repo.anaconda.com/pkgs/pro dekupl-run dekupl-annotation dekupl-viewer
+```
+
+Documentation for each submodule can be found into their respective projects (see above).
