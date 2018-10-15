@@ -16,7 +16,7 @@ The DE-kupl project is composed of three sub-modules:
 
 - [DE-kupl run](https://github.com/Transipedia/dekupl-run) which handle the DE-kupl procude from raw FASTQ to the assembly of differentially expressed k-mers. 
 - [DE-kupl annotation](https://github.com/Transipedia/dekupl-annotation) which annotate DE contigs produced bu DE-kupl run.
-- [DE-kupl viewer](https://github.com/Transipedia/dekupl-annotation) Interactively visualize annotated dekupl contigs in a Shiny interface.
+- [DE-kupl viewer](https://github.com/Transipedia/dekupl-viewer) Interactively visualize annotated dekupl contigs in a Shiny interface.
 
 We recommand to use [conda](https://conda.io/miniconda.html) to install all three submodules using a single command-line :
 
