@@ -25,3 +25,11 @@ conda install -n dekupl -y -m --override-channels -c transipedia -c bioconda -c 
 ```
 
 Documentation for each submodule can be found into their respective projects (see above).
+
+Usage example
+```
+source activate dekupl
+dekupl-run --configfile my-config.json  -jNB_THREADS --resources ram=MAX_MEMORY -p
+dkpl index -g toy/references/GRCh38-chr22.fa.gz -a toy/references/GRCh38-chr22.gff.gz -i test_index
+dekupl-viewer -c ${PWD}/toy/DiffContigsInfos.tsv -s ${PWD}/toy/sample_conditions_full.tsv
+```
